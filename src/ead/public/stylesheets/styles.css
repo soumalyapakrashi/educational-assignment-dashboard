@@ -1,0 +1,103 @@
+body{
+    height: 100vh;
+}
+
+/* Blue Background */
+.container{
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color:#5277E3;
+}
+
+/* White box */
+.box{
+    height: 500px;
+    width: 510px; 
+    border-radius: 10px; 
+    background-color: white;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* Student, Professor, Adminitrator tab */
+.boxes{
+    height: 10px;
+    /* width: 34%; */
+    width: 130px;  
+    text-align: center;
+    padding: 20px;
+    background-color: #cac7c7;
+    font-weight: bold;
+}
+
+/* Student tab */
+#Student{
+    border-top-left-radius: 10px; /*to round the top left corner.*/
+    background-color: white;/*add background white*/
+}
+
+/*Administrator tab*/
+#Administrator{
+    border-top-right-radius: 10px;/*to round the top right corner.*/
+}
+
+#main{
+    text-align: center;
+    display: inline;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 500px;
+    background: white;
+}
+
+h2{
+    text-align: center;
+    color: #8A8A8A;
+}
+
+.Input{
+    display: inline-flex; 
+    height: 50pxx;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8d6d6;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.material-icons{
+    /* background-color: #d8d6d6;
+    height: 100%; */
+    align-content: left;
+}
+
+.text{
+    background-color: #d8d6d6;
+    border: 10px #d8d6d6;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+}
+
+#button{
+    background-color: #5277E3;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: 10px #5277E3;
+    color: white;
+    font-size: large;
+}
+
+#Professor:hover, #Administrator:hover{
+    background-color: #d8d6d6;
+    cursor: pointer;
+}
