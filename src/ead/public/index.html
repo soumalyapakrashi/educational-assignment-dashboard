@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educational Assignment Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aaccount_circle">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <title>Login Page</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="box">
+            <button onclick="student_show()" id="stud" class="boxes">Student</button>
+            <button onclick="professor_show()" id="prof" class="boxes">Professor</button> 
+            <button onclick="administrator_show()" id="admin" class="boxes" >Administrator</button> 
+            <div id="main">
+                <form action="Login" class="StudentLogin">
+                    <div id="Student"><h2>Student Login</h2></div>
+                    <div id="Professor"><h2>Professor Login</h2></div>
+                    <div id="Administrator"><h2>Administrator Login</h2></div>
+                    <div class="Input"><i class="material-icons">account_circle</i> 
+                        <input class="text" type="text" placeholder="User Name" size="20" required></div>
+                    <br><br>
+                    <div class="Input"><i class="material-icons">lock</i>
+                        <input class="text" type="text" placeholder="Password" name="Password" size="20" required></div>
+                    <br><br>
+                    <input id="button" type="submit" value="Login">
+                </form>
+            </div> 
+        </div>
+    </div> 
+    <script src="./scripts/login.js"></script>
 </body>
 </html>
