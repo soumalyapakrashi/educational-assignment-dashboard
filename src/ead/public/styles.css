@@ -1,5 +1,7 @@
 body{
     height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
 /* Blue Background */
@@ -15,7 +17,7 @@ body{
 
 /* White box */
 .box{
-    height: 500px;
+    height: 470px;
     width: 510px; 
     border-radius: 10px; 
     background-color: white;
@@ -26,13 +28,14 @@ body{
 
 /* Student, Professor, Adminitrator tab */
 .boxes{
-    height: 10px;
+    height: 50px;
     /* width: 34%; */
-    width: 130px;  
+    width: 170px;  
     text-align: center;
     padding: 20px;
     background-color: #cac7c7;
     font-weight: bold;
+    border: none;
 }
 
 /* Student tab */
@@ -62,7 +65,7 @@ h2{
 
 .Input{
     display: inline-flex; 
-    height: 50pxx;
+    height: 50px;
     width: 250px;
     justify-content: center;
     align-items: center;
@@ -97,7 +100,28 @@ h2{
     font-size: large;
 }
 
-#Professor:hover, #Administrator:hover{
-    background-color: #d8d6d6;
+.boxes:hover{
     cursor: pointer;
+    background-color: white;
 }
+
+#stud{
+    border-top-left-radius: 10px;
+    background-color: white;
+}
+
+#admin{
+    border-top-right-radius: 10px;
+}
+
+#button:hover{
+    background-color: #6486eb;
+    cursor: pointer
+}
+
+#Administrator, #Professor{
+    display: none;
+}
+
+#Student, #Administrator, #Professor{
+    height: 50px;}

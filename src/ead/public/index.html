@@ -6,48 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aaccount_circle">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Login Page</title>
 </head>
 <body>
     <div class="container">
         <div class="box">
-            <div id="Student" class="boxes">Student</div>
-            <div id="Professor" class="boxes">Professor</div> 
-            <div id="Administrator" class="boxes" >Administrator</div> 
-            
-            <!-- <div class="slide-controls">
-                <input type="radio" name="slide" id="Student"  class="boxes" checked>
-                <input type="radio" name="slide" id="Professor" class="boxes">
-                <input type="radio" name="slide" id="Administrator" class="boxes">
-                <label for="Student" class="login" id="Student">Student</label>
-                <label for="Professor" class="login" id="Professor">Professor</label>
-                <label for="Administrator" class="login" id="Administrator">Administrator</label>
-                <div class="slider-tab"></div>
-             </div> -->
+            <button onclick="student_show()" id="stud" class="boxes">Student</button>
+            <button onclick="professor_show()" id="prof" class="boxes">Professor</button> 
+            <button onclick="administrator_show()" id="admin" class="boxes" >Administrator</button> 
             <div id="main">
                 <form action="Login" class="StudentLogin">
-                    <h2>Student Login</h2> 
-                    <div class="Input"><i class="material-icons">account_circle</i> 
-                        <input class="text" type="text" placeholder="User Name" size="20" required></div>
-                    <br><br>
-                    <div class="Input"><i class="material-icons">lock</i>
-                        <input class="text" type="text" placeholder="Password" name="Password" size="20" required></div>
-                    <br><br>
-                    <input id="button" type="submit" value="Login">
-                </form>
-                <form action="Login" class="ProfessorLogin">
-                    <h2>Professor Login</h2> 
-                    <div class="Input"><i class="material-icons">account_circle</i> 
-                        <input class="text" type="text" placeholder="User Name" size="20" required></div>
-                    <br><br>
-                    <div class="Input"><i class="material-icons">lock</i>
-                        <input class="text" type="text" placeholder="Password" name="Password" size="20" required></div>
-                    <br><br>
-                    <input id="button" type="submit" value="Login">
-                </form>
-                <form action="Login" class="AdminitratorLogin">
-                    <h2>Administrator Login</h2> 
+                    <div id="Student"><h2>Student Login</h2></div>
+                    <div id="Professor"><h2>Professor Login</h2></div>
+                    <div id="Administrator"><h2>Administrator Login</h2></div>
                     <div class="Input"><i class="material-icons">account_circle</i> 
                         <input class="text" type="text" placeholder="User Name" size="20" required></div>
                     <br><br>
