@@ -4,6 +4,7 @@ const path = require("path");
 const Database = require("./Database");
 const session = require("express-session");
 const MySQLStore = require("express-mysql-session")(session);
+const bodyParser = require("body-parser");
 
 
 // Get the configurations from .env file
@@ -29,6 +30,8 @@ const PORT = process.env.PORT;
 // Connect the session store
 const session_store = new MySQLStore({}, Database.databaseConnection);
 
+const json_parser = bodyParser.json();
+
 // Use express-sessions as a middleware for managing sessions
 app.use(session({
     secret: process.env.SESSION_SECRET,
@@ -39,6 +42,7 @@ app.use(session({
 
 // Set the main route
 app.get("/", (request, response) => {
+    console.log(request.params);
     // If the user is not logged in, email field will not be present.
     // Then we will show the main login page
     if(!request.session.email) {
@@ -71,6 +75,11 @@ app.get("/*.js", (request, response) => {
 
     // Serve the js file
     response.sendFile(path.join(__dirname, "public", "scripts", filename));
+});
+
+app.post("/login", json_parser, (request, response) => {
+    console.log(request.body);
+    response.send("Hello World");
 });
 
 

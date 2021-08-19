@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #F3F5FA;
+}
+
+#syllabusicon{
+    box-shadow: -3px 0 0 0 #5277E3;
+    fill: #5277E3;
+}
+
+#top{
+    position: absolute;
+    top: 0;
+    bottom: 50vh;
+    left: 0;
+    right: 0;
+    background-color: #Eaeff9;
+}
+
+.Janina{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 100px;
+    line-height: 2.0;
+}
+
+h1{
+    color: #5277E3;
+}
+
+.Semester{
+    background-color: #5277E3;
+    color: white;
+    padding: 15px;
+    padding-left: 30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 30px;
+    font-size:x-large;
+}
+
+ul{
+    margin-left: 55px;
+    list-style-position: inside;
+    list-style-type: circle;
+}
+
+.Syllabuscontent{
+    background-color: white;
+    padding: 40px;
+}
