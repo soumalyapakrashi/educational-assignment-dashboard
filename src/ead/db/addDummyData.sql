@@ -37,8 +37,8 @@ INSERT INTO `student` (`ID`, `Registration`, `Roll`, `Name`, `Picture`, `Batch`,
 
 -- Add dummy data to PROFESSOR table
 INSERT INTO `professor` (`ID`, `Name`, `Picture`, `Department`, `Designation`, `Achievements`, `Phone`, `Email`, `Password`) VALUES
-('P-5ac0a88a-9ef5-4765-b8b3-d7841fb4c7b7', 'Nabendu Chaki', 'F:\\Programs\\Projects\\educational-assignment-dashboard\\object_storage\\pictures\\39357720-ff94-11eb-bc4', 1, 'Prof.', NULL, '+91 1234-567-890', 'nabenduchaki@gmail.com', 'password'),
-('P-b0975d6a-1dae-4a60-9919-5f2f06cd71f2', 'Sankhayan Chowdhury', 'F:\\Programs\\Projects\\educational-assignment-dashboard\\object_storage\\pictures\\39359e30-ff94-11eb-bc4', 1, 'Prof.', NULL, '+91 1234-567-890', 'sankhayanchowdhury@gmail.com', 'password');
+('P-5ac0a88a-9ef5-4765-b8b3-d7841fb4c7b7', 'Nabendu Chaki', 'F:\\Programs\\Projects\\educational-assignment-dashboard\\object_storage\\pictures\\39357720-ff94-11eb-bc4.jpeg', 1, 'Prof.', NULL, '+91 1234-567-890', 'nabenduchaki@gmail.com', 'password'),
+('P-b0975d6a-1dae-4a60-9919-5f2f06cd71f2', 'Sankhayan Chowdhury', 'F:\\Programs\\Projects\\educational-assignment-dashboard\\object_storage\\pictures\\39359e30-ff94-11eb-bc4.jpeg', 1, 'Prof.', NULL, '+91 1234-567-890', 'sankhayanchowdhury@gmail.com', 'password');
 
 
 -- Add dummy data to ADMINISTRATOR table

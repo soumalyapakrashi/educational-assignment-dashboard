@@ -33,9 +33,9 @@ const PORT = process.env.PORT;
 const json_parser = bodyParser.json();
 
 // Use express-sessions as a middleware for managing sessions
-// The secret key is used to encrypt the cookies
-// The resave key says whether the cookie should be saved back to the client even if the session is not modified
-// Forces a session that is "uninitialized" to be saved to the store. A session is uninitialized when it is new but not modified.
+// The secret key is used to encrypt the cookies.
+// The resave key says whether the cookie should be saved back to the client even if the session is not modified.
+// The saveUninitialized key forces a session that is "uninitialized" to be saved to the store. A session is uninitialized when it is new but not modified.
 app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: true,

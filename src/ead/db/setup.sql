@@ -110,9 +110,3 @@ CREATE TABLE `Assignment` (
     FOREIGN KEY (`Professor`) REFERENCES `Professor`(`ID`),
     FOREIGN KEY (`Subject`) REFERENCES `Subject`(`ID`)
 );
-
-CREATE TABLE `Login` (
-    `Token` VARCHAR(100),
-    `ID` VARCHAR(100),
-    PRIMARY KEY (`Token`)
-);
