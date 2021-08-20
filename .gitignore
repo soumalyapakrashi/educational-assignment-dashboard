@@ -1,9 +1,11 @@
 # dotenv environment variables file
-.env
-.env.test
+**.env
+**.env.test
 
 **/pictures
 
 # any file that contains a .temp extension. These are either just temporary files or might contain some personal
 # information which does not need to be version controlled
 *.temp*
+
+**node_modules/
