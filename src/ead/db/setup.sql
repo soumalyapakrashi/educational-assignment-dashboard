@@ -10,7 +10,7 @@ CREATE TABLE `Administrator` (
     `Picture` VARCHAR(255),
     `Position` VARCHAR(100),
     `Phone` VARCHAR(20),
-    `Email` VARCHAR(100),
+    `Email` VARCHAR(100) UNIQUE,
     `Password` VARCHAR(40),
     PRIMARY KEY (`ID`)
 );
@@ -23,7 +23,7 @@ CREATE TABLE `Professor` (
     `Designation` VARCHAR(20),
     `Achievements` JSON,
     `Phone` VARCHAR(20),
-    `Email` VARCHAR(100),
+    `Email` VARCHAR(100) UNIQUE,
     `Password` VARCHAR(40),
     PRIMARY KEY (`ID`),
     FOREIGN KEY (`Department`) REFERENCES `Department`(`ID`)
@@ -80,7 +80,7 @@ CREATE TABLE `Student` (
     `Department` INT,
     `Course` INT,
     `Phone` VARCHAR(20),
-    `Email` VARCHAR(100),
+    `Email` VARCHAR(100) UNIQUE,
     `Password` VARCHAR(40),
     PRIMARY KEY (`ID`),
     FOREIGN KEY (`Department`) REFERENCES `Department`(`ID`),

@@ -27,15 +27,18 @@ function administrator_show() {
     document.getElementById('prof').style.backgroundColor= "#cac7c7";
     document.getElementById('Administrator').style.display = "block";
     document.getElementById('admin').style.backgroundColor= "white";
-    selected_button = "admin";
+    selected_button = "administrator";
 }
 
+// Get the form element and intercept the submit event.
 const form = document.querySelector("form");
 form.addEventListener("submit", event => {
+    // Prevent the form from auto-submitting
     event.preventDefault();
 
     const httpRequest = new XMLHttpRequest();
 
+    // This check is required for browsers which does not support AJAX
     if(!httpRequest) {
         alert("Browser does not support required modern features");
         return false;
@@ -46,20 +49,31 @@ form.addEventListener("submit", event => {
         if(httpRequest.readyState === XMLHttpRequest.DONE) {
             // If the request has succeeded. 200 response means transaction is successful
             if(httpRequest.status === 200) {
-                console.log(httpRequest.responseText);
+                // If incorrect credentials are given, show an alert
+                if(httpRequest.responseText === "Incorrect credentials")
+                    alert("Incorrect Credentials");
+                // If correct credentials are given, go to the dashboard page
+                else if(httpRequest.responseText === "Success") {
+                    location.href = "/dashboard";
+                }
             }
         }
     }
 
+    // Get the email and password from the form
     const email = document.querySelector("#email").value;
     const password = document.querySelector("#password").value;
 
+    // Specify which method is used to send the request and where to send it
     httpRequest.open("POST", "/login");
+    // Set the required headers because JSON data is being transferred
     httpRequest.setRequestHeader('Content-Type', 'application/json');
+    // Construct the required JSON data
     const data = {
+        "user": selected_button,
         "email": email,
         "password": password
     }
+    // Send the JSON data as a string
     httpRequest.send(JSON.stringify(data));
-    // httpRequest.send();
 });
