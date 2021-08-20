@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dependency directories
 node_modules/
 
@@ -8,3 +9,17 @@ node_modules/
 pictures/
 *.temp.*
 object_storage/
+=======
+# dotenv environment variables file
+*.env
+*.env.test
+
+**/pictures
+**/object_storage
+
+# any file that contains a .temp extension. These are either just temporary files or might contain some personal
+# information which does not need to be version controlled
+*.temp*
+
+**node_modules/
+>>>>>>> develop

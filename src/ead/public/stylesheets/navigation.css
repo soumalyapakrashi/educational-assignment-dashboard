@@ -1,0 +1,87 @@
+#navigation{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 40px;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    justify-content: center;
+    box-shadow: 8px 0 20px -13px #707070;
+}
+
+.Icon{
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+.Iconname{
+    font-size: 15px;
+    color: #707070;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    padding: 9px;
+    margin-left: 5px;
+    background-color: #d0d7e6;
+    left: 35px;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.Icon:hover .Iconname{
+    left: 33px;
+    opacity: 1;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+#Acnt{
+    position: absolute;
+    bottom: -65px;
+    margin-left: 5px;
+}
+
+#Icnm{
+    position: absolute;
+    bottom: -115px;
+    margin-left: 5px;
+}
+
+.Iconname:before{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background: #d0d7e6;
+    bottom: 10px;
+    left: 2px;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+svg{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    fill: #707070;
+}
+
+svg:hover{
+    cursor: pointer;
+}
+
+#account{
+    position: absolute;
+    bottom: -85px;
+    margin-left: -10px;
+}
+
+ #logout{
+    position: absolute;
+    bottom: -135px;
+    margin-left: -10px;
+} 

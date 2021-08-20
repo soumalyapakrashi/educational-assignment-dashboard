@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+/* Blue Background */
+.container {
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color:#5277E3;
+}
+
+/* White box */
+.box {
+    height: 470px;
+    width: 510px; 
+    border-radius: 10px; 
+    background-color: white;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* Student, Professor, Adminitrator tab */
+.boxes {
+    height: 50px;
+    /* width: 34%; */
+    width: 170px;  
+    text-align: center;
+    padding: 20px;
+    background-color: #cac7c7;
+    font-weight: bold;
+    border: none;
+}
+
+/* Student tab */
+#Student {
+    border-top-left-radius: 10px; /*to round the top left corner.*/
+    background-color: white;/*add background white*/
+}
+
+/*Administrator tab*/
+#Administrator {
+    border-top-right-radius: 10px;/*to round the top right corner.*/
+}
+
+#main {
+    text-align: center;
+    display: inline;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 500px;
+    background: white;
+    padding-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #8A8A8A;
+}
+
+.Input {
+    display: inline-flex; 
+    height: 50px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8d6d6;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.material-icons {
+    /* background-color: #d8d6d6;
+    height: 100%; */
+    align-content: left;
+}
+
+.text {
+    background-color: #d8d6d6;
+    border: 10px #d8d6d6;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+}
+
+#button {
+    background-color: #5277E3;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: 10px #5277E3;
+    color: white;
+    font-size: large;
+}
+
+.boxes:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+#stud {
+    border-top-left-radius: 10px;
+    background-color: white;
+}
+
+#admin {
+    border-top-right-radius: 10px;
+}
+
+#button:hover {
+    background-color: #6486eb;
+    cursor: pointer
+}
+
+#Administrator, #Professor {
+    display: none;
+}
+
+#Student, #Administrator, #Professor {
+    height: 50px;
+}
